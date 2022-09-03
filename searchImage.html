@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
-    <title>Google Search</title>
+    <title>Google Search- Search Image</title>
 </head>
 <body>
     <nav class="navbar">
         <ul>
-            <li><a href="/searchImage.html">Search Image</a></li>
+            <li><a href="/index.html">Normal Search</a></li>
             <li><a href="/advancedSearch.html">Advanced Search</a></li>
         </ul>
         <label class="switch">
@@ -19,13 +19,12 @@
         </label>
     </nav>
     <div class="container">
-        <h1 class="title">Google</h1>
-    <form id="form" action="https://www.google.com/search">
+        <h1 class="title">Google<span class="subtitle">Image</span></h1>
+    <form id="form" action="https://www.google.com/images">
         <input type="text" name="q" id="query" placeholder="Search">
         <a href="#"><svg onclick="sumbit()" class="search-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><g class="search-path" fill="none" stroke="#000"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></a>
     </form>
-    </div>
-    <footer>@ajstars</footer>
+</div>
 <script src="/src/script.js"></script>
 </body>
 </html>

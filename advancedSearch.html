@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Google Search- Advanced Search</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/index.html">Normal Search</a></li>
+            <li><a href="/searchImage.html">Image Search</a></li>
+        </ul>
+        <label class="switch">
+            <input type="checkbox" id="checkBox" onclick="loadTheme()">
+            <span class="slider"></span>
+        </label>
+    </nav>
+    <div class="container">
+        <h1 class="ltitle title">Google<span class="subtitle">Advance Search</span></h1>
+        <form id="advform" action="https://www.google.com/search?tbm=isch&">
+        <h2 class="heading">Find Pages with..</h2>
+        <div><span>all these words:</span>
+        <input type="text" name="as_q" id="query1" placeholder="Type the important words:  tri-colour rat terrier"></div>
+        <div><span>this exact word or phrase:</span>
+        <input type="text" name="as_epq" id="query2" placeholder='Put exact words in quotes:  "rat terrier"'></div>
+        <div><span>any of these words:</span>
+        <input type="text" name="as_oq" id="query3" placeholder="Type OR between all the words you want:  miniature OR standard"></div>
+        <div><span>none of these words:</span>
+        <input type="text" name="as_eq" id="query4" placeholder='Put a minus sign just before words that you donot want: -rodent, -"Jack Russell"'></div>
+        <div><span>numbers ranging from:</span>
+        <input type="text" name="as_nlo" id="query4" placeholder="Lower value">
+        <span>to</span>
+        <input type="text" name="as_nhi" id="query4" placeholder="Higher value">
+    </div>
+        <button class="sumbit" type="submit">Search</button>
+    </form>
+    </div>
+    <footer>@ajstars</footer>
+    <script src="/src/script.js"></script>
+</body>
+</html>
